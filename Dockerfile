@@ -1,3 +1,6 @@
-FROM mc706/node-awscli:latest
+FROM mc706/node-awscli
 
-RUN npm install -g elm elm-test
+RUN npm install -g elm 
+RUN npm install -g elm-test
+
+ENTRYPOINT ["elm"]
